@@ -1,0 +1,62 @@
+# What is java?
+
+--> Java is a high level programming language that helps developer to build Desktop application, Web application,
+    enterprise level application etc.
+
+# Why JAVA?
+
+--> Java is portable language means write once run anywhere (Platform independent).
+--> Java manage memory via GC (GC inside JVM).
+--> Security.
+--> Java solve easily Multi-inheritence using Interface.
+--> In java pointer no use that makes java easy.
+--> java has compiler & Interpreter.
+
+# JAVA works:
+--> used to build applications Back-End.
+--> APIs building.
+
+# JDK:-
+--> Java Development Kit is software that helps to develop applications.
+--> It provides Environment, Tools, and Libraries for running, testing, compiling, debugging java programs.
+--> ex: Javac (Java compiler)
+        Debugger, Docs, etc.
+
+--> JDK = JRE + Tools;
+
+# JRE:-
+--> Java Runtime Environment provides resources for running java programs.
+--> JRE = JVM + Libraries;
+
+# JVM:-
+--> Java virtual machine is helps to convert .class file (bytecode) int machine code.
+--> Bytecode is platform independent.
+--> JVM contains Interpreter, JIT compiler, Garbage Collection, main methods.
+
+# JVM work flow:
+--> class file loading into memory.
+--> verify its Security.
+--> convert .class to MC Using JIT compiler and Interpreter.
+--> its also manages memory allocation using GC.
+
+
+# Its Syntax:-
+
+Class Name {
+    Public static void main(String[] args) {
+
+        code....
+    }
+}
+
+Ex:- adding two numbers;
+
+Class  AddTwoNum {
+    Public static void main(String[] args) {
+
+        int a = 10; 
+        int b = 12;
+
+        System.out.println(a+b);
+    }
+}
