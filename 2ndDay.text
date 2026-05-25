@@ -1,0 +1,79 @@
+# execution flow:-
+
+->  Source code ----> compiler ----> Bytecode ----> JVM ----> Machine code.
+
+-> inside JVM:-
+
+        class loader ----> verification (Bytecode) ----> JIT compiler ----> Machine code
+
+# JSE --> Java Standard Edition. (Core Java)
+# JEE --> Java Enterprise Edition. (For App, BackEnd).
+# JME --> Java Micro Edition. (JME replaced by Android).
+
+# LSB --> Least Significant Bit means
+EX:-
+        4321 + 1 ==> 4322 --> value increased by only one. in that case unit place value is LSB.
+
+# MSB --> Most Significant Bit means 
+EX:-  
+        4321
+       +1
+       ______
+       5321
+
+--> Now you can see the value after addition increased by 1000. in that case 4 is the MSB.
+
+# How to store floating point number in memory??
+--> 1 step --> we need to find the binary of above number.
+EX:- 5.125(Floating point) --> 101.001 (binary)
+
+--> 2 step --> make it following form.
+
+        (1 * xx) * 2^exp
+
+for Ex:- 100.001 (binary of 4.125)
+    let's convert it:-
+
+        (1 * 1.00001) * 2^2 --> exp = 2 because we shift the decimal point before 2 places that.
+
+        1.00001 * 2^2 
+
+--> 3 step --> add Bias to the exponent:
+        2 + 127 ==> 129
+
+--> 4 step --> place value in memory.
+
+1 bit --> for sign
+  1 --> for +ve
+  0 --> for -ve
+
+8 bits --> for exponent
+  129 --> 10000001
+  
+23 bits --> for mantissa.
+  01001000000000.....0 Until 23. (this value taken from 1.01001 * 2^2 after decimal point)
+
+# how to retriev it:
+
+1 step --> check the sign first that number is negative or positive.
+--> if sign bit is 0 then negative otherwise it is positive.
+
+3 step --> convert it into bynary (129) => 10000001
+fill in memory.
+
+formula: (-1)^sign * (1 + mantissa) * 2^(expo - Bias)
+
+evaluate :-
+        (-1)^sign * (1 + mantissa) * 2^(expo - Bias)
+        (-1)^0 * (1 + 01001) * 2^(129 - 127)
+        1 * (1 + 2^-5) * 2^2
+        (1 + -32) * 4
+        (1 + 1/32) * 4
+        (1 + 0.03125) * 4;
+        (1.03125) * 4
+        4.125
+
+--> Do similar to another data type.
+
+
+

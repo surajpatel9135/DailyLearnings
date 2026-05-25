@@ -1,0 +1,31 @@
+# type conversion:
+--> convert one data type to another.
+EX:- float --> int
+     long  --> double etc..
+
+--> it is two types
+1. implicit conversion:
+--> it is automatically converted.
+--> but one condition in which, we convert small data type to bigger one.
+--> it is also known as widening casting.
+
+EX:-  int --> float.
+      long --> double.
+
+      int a = 10;
+      float f = a; // implicit conversion.
+
+2. explicit conversion:
+--> we need to do manually.
+--> in which, we cast the data from bigger to smaller.
+--> it is also known as narrowing casting.
+--> float --> int;
+    int --> byte. etc..
+
+EX:- float f = 43.23;
+     int a;
+     a = f; // give error
+     a = (int) f; // correct
+
+     print(a) // 43
+--> in which, we convert it forcefully.

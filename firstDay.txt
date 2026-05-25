@@ -38,6 +38,7 @@
 --> verify its Security.
 --> convert .class to MC Using JIT compiler and Interpreter.
 --> its also manages memory allocation using GC.
+ 
 
 
 # Its Syntax:-
