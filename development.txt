@@ -1,0 +1,68 @@
+#Web Development:-
+--> web Development is software developed by programmer.
+--> in development we developed frontend and background.
+
+
+1. frontend --> HTML, CSS, Tailwind, Bootstrap, JavaScript, react.
+--> HTML:-
+    --> stand for hiper text markup language.
+    --> it is used for define structure of web page and websites.
+    --> it is scelaton of our web pages.
+    
+    Ex:- <html>
+            <head>
+                <title>
+                    this is for meta data or web page info.
+                </title>
+            </head>
+            <body>
+                <h1>This part contain main content</h1>
+            </body>
+        </html>
+
+
+--> CSS:- 
+    --> it stands for cascading shtylesheet
+    --> basically it is used for styling of our page.
+
+    Ex:- body {
+        background-color: white;
+        write whatever you want to style in content of body.
+    }
+
+--> JavaScript:-
+    --> JavaScript is used for making functionable of our web pages.
+    --> like qlickable, etc..
+    --> JavaScript is programming language specially designed for web Development.
+
+    Ex:- function greeting() => {
+        code...
+    }
+
+--> Tailwind:- 
+    --> it is a css framework.
+    --> it is used for frontend Development.
+
+--> Bootstrap:-
+    --> it is also a css framewok.
+    --> for frontend Development.
+
+
+# internet:-
+--> Internet is nothing but connections of computers that creates network using cables and communicates with each others.
+
+                                   client4
+                                     |
+                                     |
+                    client1 ----> server -----> client2
+                                     |
+                                     |
+                                   client3
+--> server called as backend.
+
+
+# backend:-
+--> it is the main logic of any web app.
+--> its communicate with databases using APIs.
+--> develop using programming languages like Python, java, nodejs and express.
+--> databases like mongoDB, mySQL, etc...
