@@ -1,0 +1,69 @@
+# control flow statement:- it is used when we need to skip or we want to execute other statement.
+-> it breaks the linear progression execution.
+-> it execute the code according to the decison-making or looping.
+-> its three main types:-
+
+1. conditional (selection) statement:- 
+--> These statements allow the program to choose different paths of execution based on whether a condition is true or false.
+--> if statement: Executes a block of code only if a specified condition is true.
+
+--> if-else / else if: Provides alternative paths if the initial condition is false.
+
+switch statement: Evaluates an expression and matches it against multiple potential cases (highly efficient for checking a single variable against many fixed values).
+
+EX:-
+    if(true) {
+        System.out.println("Hii, I'm suraj patel.");
+    }
+    else {
+        System.out.println("Hello World!");
+    }
+
+2. Iterative (Loop) statement:-
+--> it used when we need to do same task repetadely.
+
+i. For Loop:- 
+--> used : when we know exact number of repetation.
+--> for Loop: for(start, end, increment) {
+    statements.....
+}
+
+ii. while loop:-
+--> used when we don't know about repetation.
+--> it execute until the condition false.
+--> while (condition) {
+    statements...
+}
+
+iii. do-while Loop:-
+--> Similar to a while loop, but it executes the code block at least once before checking the condition.
+--> do {
+    statements..
+    increment
+}
+while(condition);
+
+
+3. Transfer (Jump) Statements
+--> Jump statements instantly transfer the program's control from one part of the code to another. 
+--> They are often used to disrupt loops or exit functions early.
+
+break: Terminates the innermost loop or switch statement immediately.
+
+continue: Skips the rest of the current loop iteration and moves directly to the next one.
+
+return: Terminates execution of a function and optionally returns a value to where the function was called.
+
+
+Ex:-
+
+for(int i = 0; i < 10; i++) {
+    System.out.print(i+" ");
+}
+
+Output:- 0 1 2 3 4 5 6 7 8 9
+
+-> in this example we print i 10 times.
+-> without loop we need to write code 10 times for printing.
+-> with loop we need to write only few lines.
+-> it makes code more readable.
