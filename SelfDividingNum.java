@@ -57,7 +57,7 @@ public class SelfDividingNum {
         System.out.println("Enter Second number: ");
         int right = sc.nextInt();
 
-        System.out.println("Self dividing numbers List: "+selfDividingNumbers(left, right));
+        System.out.println("Self dividing numbers List from "+left+" to "+right+": "+selfDividingNumbers(left, right));
 
     }
 }
