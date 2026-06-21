@@ -1,11 +1,20 @@
+/*
+
+-- This program will show you Constructor Overloading.....
+-- Constructor overloading means we create multiple constructor with the same name but with the different different parameter.
+-- I'll show you in this Example....
+
+*/
 class Student {
     int age;
     long id;
     String name;
 
+    // default constructor
     Student() {
         System.out.println("Default constructor..");
     }
+
     Student(long id) {
         this.id = id;
         System.out.println("Student ID: "+id);
