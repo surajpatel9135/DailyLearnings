@@ -1,0 +1,77 @@
+# inheritence:-
+-- inheritence is a concept of oops in which a extends the property of another class.
+
+-- their are 4 types.
+
+1. simple inheritence
+-- in which a clss extended by only one class.
+-- Simple Inheritance (also called Single Inheritance) is a core OOP concept where a child class inherits the variables and methods of a single parent class.
+Ex:-
+
+parent class
+class A {
+    void show() {
+        System.out.println("This class is A");
+    }
+}
+
+child class
+class B extends A {
+    void print() {
+        System.out.println("This class is B");
+    }
+}
+
+2. multi-level :-
+-- A class inherits property of another class and this class extended by another class.
+Ex: 
+
+class A {
+
+}
+class B extends A {
+
+}
+
+class C extends B {
+
+}
+
+3. Heirrarchy :-
+-- it is same like a tree.
+-- means a class inherited by two class like a class has two siblings.
+
+                     A
+                    / \
+                   /   \
+                  B     C
+
+class A {
+
+}
+class B extends A{
+
+}
+class C extends A{
+
+}
+
+4. multiple inheritence:-
+-- this type of inheritence is not supported in java.
+-- but the difinition is two or more classes extended by a single class.
+
+                A       B
+                 \     /
+                  \   /
+                    C
+class A {
+
+}
+class B {
+
+}
+class C extends A, B {
+
+}
+
+This is not supported in java cause of dimond problem.
