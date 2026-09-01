@@ -48,6 +48,12 @@ public class StaticKeyword {
 
         System.out.println("Name: "+s1.name+", Roll no: "+s1.rollNo+", Age: "+s1.age+", College: "+Student.college);
         System.out.println("Name: "+s2.name+", Roll no: "+s2.rollNo+", Age: "+s2.age+", College: "+Student.college);
+        print();
+    }
+
+    private static void print() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'print'");
     }
 }
 

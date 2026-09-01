@@ -13,7 +13,7 @@
 
     */
 
-public class BitWiseOperator{
+public class BitwiseOperator{
     public static void main(String[] args) {
         int a = 10;
         int b = 20;
@@ -55,6 +55,6 @@ public class BitWiseOperator{
         int l = a << 2;// 40
         int r = b >> 2;// 5
 
-        System.out.println("l: "l+ " r: "+r);
+        System.out.println("l: "+ l + " r: "+r);
     }
 }

@@ -10,7 +10,7 @@
 */
 
 
-public class Abstracttion
+public class Abstraction
 {
 	public static void main(String[] args) {
 		Car car = new FuelCar();

@@ -52,7 +52,7 @@ import java.util.*;
 public class Recursion {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int  n = sc.nextInt();
 
         int ans = fun(n);
         System.out.println("Factorial of n: "+ans);
